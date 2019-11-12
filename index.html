@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    <link href="style.css" rel="stylesheet"></head>
+    <body>
+        <header class="header" id="header">
+            <div class="header-wrapper">
+                <h1>Блог 001001</h1>
+                <h2>Создавайте статьи и добавлятей их в избранное</h2>
+                <button class="header-button">Приступить</button>
+            </div>
+        </header>
+        <section id="app" class="app">
+            <nav id="navigation">
+                <ul class="navigation-list">
+                    <li><a class="tab" href="#" data-name="posts">Посты</a></li>
+                    <li><a class="tab tab-active" href="#" data-name="create">Создать</a></li>
+                    <li><a class="tab" href="#" data-name="favorite">Избранное</a></li>
+                </ul>
+            </nav>
+            <div id='cssload-loader' class="hide">
+                    <div class='cssload-inner cssload-one'></div>
+                    <div class='cssload-inner cssload-two'></div>
+                    <div class='cssload-inner cssload-three'></div>
+            </div>
+            <div id="posts" class="hide"></div>
+            <form id="create">
+                <h1 class="create-header">Создать новый пост</h1>
+                <div class="create-name">
+                    <span class="create-name_label">Название</span>
+
+                    <input name="label" type="text" class="create-name_input" placeholder="Введите название">
+                </div>
+                <div class="create-content">
+                    <span class="create-content_label">Текст</span>
+                    <textarea name="fulltext" class="create-content_input" placeholder="Введите текст"></textarea>
+                </div>
+                <span class="select_label">Тип</span>
+                <select name="type" class="select-input">
+                    <option value="note" select>Заметка</option>
+                    <option value="news">Новость</option>
+                </select>
+                <button class="create-button">Создать</button>
+            </form>
+            <div id="favorite" class="hide"></div>
+        </section>ј
+    <script type="text/javascript" src="bundle.js"></script></body>
+</html>
